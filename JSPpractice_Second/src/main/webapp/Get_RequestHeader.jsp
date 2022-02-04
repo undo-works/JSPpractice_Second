@@ -20,20 +20,18 @@
 	//Enumerationの要素の数だけ繰り返す
 	while(headers.hasMoreElements()){
 		//次の要素(HTTPヘッダー名)を取得
-		String name = (String) headers.nextElement();
+		String headerName = (String) headers.nextElement();
 		
 		//HTTPヘッダーの値を取得
-		String value = request.getHeader(name);
+		String headerValue = request.getHeader(headerName);
 %>
 		<tr>
-			<td><%= name %></td>
-			<td><%= value %></td>
+			<td><%= headerName %></td>
+			<td><%= headerValue %></td>
 		</tr>
 <%
 	}
 %>		
 	</table>
-	
-
 </body>
 </html>

@@ -19,7 +19,7 @@
 	ck.setPath("/");
 	
 	//Domain to which the cookie is issued.
-	ck.setDomain(".ipa.go.jp");
+	ck.setDomain("127.0.0.1");
 	
 	//Flag to determine whether to allow issuance only to HTTPS
 	ck.setSecure(false);

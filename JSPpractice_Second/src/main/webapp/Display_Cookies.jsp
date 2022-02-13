@@ -41,9 +41,15 @@
 		</tr>
 <%
 		}
-	}	
-%>			
-				
+	}
+	//セッションからオブジェクトを取り出す
+	String session1 = (String)session.getAttribute("session1");
+%>							
 	</table>
+	<p><%= session1 %></p>
+<%
+	//セッションの破棄
+	session.invalidate();
+%>	
 </body>
 </html>

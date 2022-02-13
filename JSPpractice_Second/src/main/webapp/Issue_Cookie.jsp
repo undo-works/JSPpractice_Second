@@ -26,6 +26,9 @@
 	
 	//Output Cookie.
 	response.addCookie(ck);
+	
+	//セッションへオブジェクトを追加
+	session.setAttribute("session1", "セッション１");
 %>
 	<p>クッキーを出力します</p>
 </body>
